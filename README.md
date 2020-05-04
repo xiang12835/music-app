@@ -1,2 +1,6 @@
 # music-app
-uniapp, vue, node.js, koa 
+
+- uniapp
+- vue
+- node.js
+- koa
