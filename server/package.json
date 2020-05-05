@@ -1,0 +1,41 @@
+{
+  "name": "UniappMusicApi",
+  "version": "3.22.0",
+  "description": "Uniapp Music NodeJS 版 API",
+  "scripts": {
+    "start": "node app.js",
+    "test": "mocha -r intelli-espower-loader -t 20000 app.test.js --exit",
+    "lint-fix": "eslint --fix --ext .js app.js module/ util/ test/ "
+  },
+  "keywords": [
+    "Uniapp Music",
+    "音乐",
+    "Uniapp Music nodejs"
+  ],
+  "husky": {
+    "hooks": {}
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "author": "binaryify",
+  "license": "MIT",
+  "dependencies": {
+    "apicache": "^1.4.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "pac-proxy-agent": "^3.0.0",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-standard": "^13.0.1",
+    "husky": "^3.0.3",
+    "intelli-espower-loader": "^1.0.1",
+    "mocha": "^6.1.4",
+    "power-assert": "^1.6.1"
+  }
+}
